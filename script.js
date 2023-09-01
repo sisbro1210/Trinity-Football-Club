@@ -16,7 +16,7 @@ function onClick()
     theme.setProperty("--background-colour", "#ffffff")
     theme.setProperty("--background-dark", "#010142")
     localStorage.setItem("current", "light")
-    location.reload()
+    current = "light"
     
     
    }else if (current == "light"){
@@ -26,8 +26,7 @@ function onClick()
     theme.setProperty("--background-colour", "#110723")
     theme.setProperty("--background-dark", "#0e061c")
     localStorage.setItem("current", "dark")
-    location.reload()
-    
+    current = "dark"
 
    }
 
@@ -40,7 +39,7 @@ function onClick()
 }
 
 function onload() {
-    
+
 
     if(current == "light") {
         localStorage.setItem("current", "light")
@@ -76,3 +75,4 @@ function onload() {
         }
 
     }
+
